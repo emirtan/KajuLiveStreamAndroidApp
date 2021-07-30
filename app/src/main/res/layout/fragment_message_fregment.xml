@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fregment.MessageFregment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/lyttop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_greadentback">
+
+                <RelativeLayout
+                    android:paddingVertical="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/imgback"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+
+                        android:visibility="gone"
+                        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                        app:tint="@color/white" />
+
+
+                    <TextView
+                        android:id="@+id/tvtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Messages"
+                        android:fontFamily="@font/pmidum"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:fontFamily="@font/pmidum"
+                        android:id="@+id/etSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginHorizontal="40dp"
+                        android:background="@android:color/transparent"
+                        android:hint="Search Users..."
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColor="@color/whitegray"
+                        android:textColorHint="@color/whitegray" />
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:id="@+id/imgsearch"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:onClick="onClickSearch"
+                        android:src="@drawable/ic_loupe"
+                        app:tint="@color/white" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/rvuserlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lyttop"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_chatusers" />
+
+            <LinearLayout
+                android:id="@+id/lyt404"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animation_view"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/bowlanim" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/plight"
+                    android:text="No Chat Detected!!"
+                    android:textColor="@color/purplepink"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                app:shimmer_base_color="@color/shimmergray"
+                app:shimmer_colored="true"
+                app:shimmer_highlight_color="@color/white"
+
+                android:id="@+id/shimmer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/lyttop">
+
+                <LinearLayout
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/item_chatusersshimmer" />
+
+                    <include layout="@layout/item_chatusersshimmer" />
+
+                    <include layout="@layout/item_chatusersshimmer" />
+
+                    <include layout="@layout/item_chatusersshimmer" />
+
+                    <include layout="@layout/item_chatusersshimmer" />
+
+                    <include layout="@layout/item_chatusersshimmer" />
+
+                    <include layout="@layout/item_chatusersshimmer" />
+
+                    <include layout="@layout/item_chatusersshimmer" />
+
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

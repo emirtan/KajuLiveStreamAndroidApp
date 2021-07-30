@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imguser"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_whitebtnround"
+                android:padding="2dp" />
+
+            <RelativeLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/imguser"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lytname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:fontFamily="@font/pbold"
+                        android:id="@+id/tvusername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        tools:text="Johnny Rios" />
+
+                    <TextView
+                        android:fontFamily="@font/pmidum"
+                        android:id="@+id/tvcountry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/bg_live5dp"
+                        android:backgroundTint="@color/red"
+                        android:paddingHorizontal="5dp"
+                        android:paddingVertical="2dp"
+                        android:text="COUNTRY"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_below="@id/lytname"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/plight"
+                    android:id="@+id/tvlastchet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="Hay, how was going?" />
+            </RelativeLayout>
+
+            <TextView
+                android:fontFamily="@font/plight"
+                android:id="@+id/tvtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+                tools:text="12:33 PM"
+                android:textColor="@color/graydark"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".3dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/gray" />
+    </LinearLayout>
+</layout>

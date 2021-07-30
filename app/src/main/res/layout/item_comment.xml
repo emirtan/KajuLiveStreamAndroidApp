@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp">
+
+        <LinearLayout
+            android:id="@+id/lytfirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shape_purple"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="5dp"
+            android:paddingVertical="3dp">
+
+            <ImageView
+                android:id="@+id/imgshape"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:src="@drawable/shapestar" />
+
+            <TextView
+                android:fontFamily="@font/pmidum"
+                android:id="@+id/tvrandomnumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:text="28"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:fontFamily="@font/pmidum"
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="2dp"
+            android:layout_marginStart="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="MR. MAJNU"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:fontFamily="@font/plight"
+            android:id="@+id/tvcomment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="you are so hot"
+            android:textColor="@color/yellow"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</layout>

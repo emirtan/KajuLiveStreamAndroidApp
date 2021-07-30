@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lytimage"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="-50dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:elevation="10dp"
+                    android:orientation="vertical"
+                    app:cardCornerRadius="10dp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_greadentback"
+                        android:backgroundTint="@color/white">
+
+                        <ImageView
+                            android:id="@+id/tvCencel"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="10dp"
+                            android:padding="3dp"
+                            android:src="@drawable/ic_baseline_close_24"
+                            app:tint="@color/black" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="60dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="Samuallel Hardmoad"
+                                android:textColor="@color/black"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+
+                            <TextView
+                                android:id="@+id/tvusername"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:text="@string/dummyname"
+                                android:textColor="@color/graydark"
+                                android:textSize="12sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/coin" />
+
+                                <TextView
+                                    android:id="@+id/tvcoin"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold"
+                                    tools:text="000" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <LinearLayout
+                                    android:id="@+id/lytfollow"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="20dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bg_greadentround"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:paddingVertical="7dp"
+                                    android:visibility="visible">
+
+                                    <ImageView
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:padding="3dp"
+                                        android:src="@drawable/ic_plus"
+                                        android:tint="@color/white" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:text=" Follow"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/lytmsg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginHorizontal="20dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bg_grayline"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:paddingVertical="7dp"
+                                    android:visibility="visible">
+
+                                    <ImageView
+                                        android:id="@+id/tvfollowbtn"
+                                        android:layout_width="20dp"
+                                        android:layout_height="20dp"
+                                        android:src="@drawable/ic_mail"
+                                        android:tint="@color/graydark" />
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:text="  Message"
+                                        android:textColor="@color/purplepink"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/lytimage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/imagepopup"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_whitebtnround"
+                    android:padding="3dp" />
+
+                <TextView
+                    android:id="@+id/profilechar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="A"
+                    android:textColor="@color/purplepink"
+                    android:textSize="40dp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

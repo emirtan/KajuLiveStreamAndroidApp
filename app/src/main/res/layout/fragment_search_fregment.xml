@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fregment.SearchFregment">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradiant_blue_purple_top"
+            android:paddingTop="20dp">
+
+            <RelativeLayout
+android:paddingVertical="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_user"
+                    app:tint="@color/white" />
+
+                <EditText
+                    android:fontFamily="@font/pmidum"
+                    android:id="@+id/etSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginHorizontal="40dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Search"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:paddingStart="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/whitegray"
+                    android:textColorHint="@color/whitegray"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imgsearch"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_loupe"
+                    app:tint="@color/white" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_users"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_top"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_users" />
+
+        <LinearLayout
+            android:id="@+id/lythistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_top"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/plight"
+                    android:text="History"
+                    android:textColor="@color/black" />
+
+                <TextView
+
+                    android:id="@+id/tvClearAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/plight"
+                    android:text="Clear All"
+                    android:textColor="@color/black" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="5dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:reverseLayout="true"
+                tools:listitem="@layout/item_search_history" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lyt404"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/bowlanim" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/plight"
+                android:text="Search resuts not found.."
+                android:textColor="@color/purplepink"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            app:shimmer_base_color="@color/shimmergray"
+            app:shimmer_colored="true"
+            app:shimmer_highlight_color="@color/white"
+            android:id="@+id/shimmer"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_top">
+
+            <LinearLayout
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="@color/graydark"
+                android:foregroundTint="@color/graydark"
+                android:orientation="vertical">
+
+                <include layout="@layout/item_chatusersshimmer" />
+
+                <include layout="@layout/item_chatusersshimmer" />
+
+                <include layout="@layout/item_chatusersshimmer" />
+
+                <include layout="@layout/item_chatusersshimmer" />
+
+                <include layout="@layout/item_chatusersshimmer" />
+
+                <include layout="@layout/item_chatusersshimmer" />
+
+                <include layout="@layout/item_chatusersshimmer" />
+
+                <include layout="@layout/item_chatusersshimmer" />
+
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </RelativeLayout>
+</layout>

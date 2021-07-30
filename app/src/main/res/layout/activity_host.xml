@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/activity_video_chat_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="lytmainscreen">
+
+            <FrameLayout
+                android:id="@+id/local_video_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/localBackground" />
+
+            <ImageView
+                android:id="@+id/imgFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha=".3"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/imgFilter2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha=".3"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/imgstiker"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="100dp"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/imgEmoji"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tag="lytfunctions">
+
+            <RelativeLayout
+                android:id="@+id/lyttop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+
+                    android:id="@+id/btn_call"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/bg_etblack"
+                    android:onClick="onCallClicked"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_baseline_close_24"
+                    app:tint="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="50dp"
+                    android:background="@drawable/bg_etblack"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/coins" />
+
+                    <TextView
+                        android:id="@+id/tvmyCoin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/pmidum"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:fontFamily="@font/pbold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/lytviewcount"
+                    android:background="@drawable/bg_live5dp"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:text="LIVE"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/lytviewcount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_etblack"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_eye"
+                        app:tint="@color/white" />
+
+                    <TextView
+                        android:fontFamily="@font/pmidum"
+                        android:id="@+id/tvviews"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="0"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lytFilterFunctions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lyttop"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#9013FE"
+                    android:onClick="onClickFilterIcon"
+                    android:src="@drawable/ic_magicstick" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#9013FE"
+                    android:onClick="onClickGifIcon"
+                    android:src="@drawable/ic_stiker" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#9013FE"
+                    android:onClick="onClickStikerIcon"
+                    android:src="@drawable/ic_emoji_stiker" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#9013FE"
+                    android:onClick="onClickEmojiIcon"
+                    android:src="@drawable/ic_emoji_hist" />
+
+                <ImageView
+                    android:id="@+id/btn_switch_camera"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="onSwitchCameraClicked"
+                    android:src="@drawable/ic_rotate_camera" />
+
+                <ImageView
+                    android:id="@+id/btn_mute"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_etblack"
+                    android:onClick="onLocalAudioMuteClicked"
+                    android:src="@drawable/ic_microphoneon" />
+            </LinearLayout>
+
+
+            <!--                                                       //    top function kam puru   -->
+
+
+            <RelativeLayout
+                android:id="@+id/lytcontrols"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/lytbottom"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvComments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:layout_above="@+id/lytShare"
+                        android:fadingEdge="vertical"
+                        android:fadingEdgeLength="40dp"
+                        android:orientation="vertical"
+                        android:requiresFadingEdge="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        app:reverseLayout="false"
+                        app:stackFromEnd="true"
+                        tools:itemCount="20"
+                        tools:listitem="@layout/item_comment" />
+
+                </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/lytbottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginVertical="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toLeftOf="@+id/lytbuttons"
+                        android:background="@drawable/bg_etblack"
+                        android:orientation="horizontal">
+
+
+                        <EditText
+                            android:fontFamily="@font/plight"
+                            android:id="@+id/etComment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginEnd="50dp"
+                            android:layout_marginRight="50dp"
+                            android:background="@android:color/transparent"
+                            android:hint="Add a Comment..."
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/white"
+                            android:textColorHint="@color/white"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/btnsend"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginHorizontal="10dp"
+                            android:src="@drawable/send"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lytbuttons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="end"
+                        android:layout_marginBottom="5dp"
+                        android:gravity="end"
+                        android:orientation="horizontal"
+                        android:paddingEnd="10sp"
+                        android:paddingRight="10sp">
+
+
+                        <ImageView
+                            android:onClick="onclickShare"
+                            android:id="@+id/imgshare"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:padding="5dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_icons_tabbar_share" />
+
+                        <ImageView
+                            android:id="@+id/imggift2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:onClick="onclickGiftIcon"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/ic_gift" />
+
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <!--                            //   TODO bottom buttons  function kam puru   -->
+
+
+            <RelativeLayout
+                android:id="@+id/lytfilters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_sheettransperent"
+                android:paddingTop="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imgfilterclose"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/bg_etblack"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_baseline_close_24"
+                    app:tint="@color/white" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvFilters"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_filters" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible">
+
+            <include
+                android:id="@+id/bottomPage"
+                layout="@layout/bottomsheet_coins"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>

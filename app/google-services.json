@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "399848085753",
+    "project_id": "tomo-live",
+    "storage_bucket": "tomo-live.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399848085753:android:d9b620d334abda0318ea28",
+        "android_client_info": {
+          "package_name": "com.tomo.tomolive"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399848085753-1fs92o3bm1blm3sa1du9nam7qcdq7rkg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tomo.tomolive",
+            "certificate_hash": "23fe8be487734704b338faea10c71ac01f87bf9e"
+          }
+        },
+        {
+          "client_id": "399848085753-72j8d5ei1o5b3fotam8ur5l0dsqfrl4b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeBXmD32WdCrww2c9dFG7ZL3_HqfVFDYg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399848085753-72j8d5ei1o5b3fotam8ur5l0dsqfrl4b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
