@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from demo.qboxus.com/livex/doc/index.html?time1234 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 Feb 2021 04:45:24 GMT -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>LiveX - Documentation</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      '../../../connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '2223805407931076');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2223805407931076&amp;ev=PageView&amp;noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88404643-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-88404643-1');
+    </script>
+    
+</head> 
+
+<body >
+	
+	<div class="container pt-5">
+		<div class="row">
+
+		<div class="col-md-3">
+
+			<div ><img width="50" height="50" src="assets/images/logo.jpg" style="border-radius: 50%; margin-bottom: 15px; margin-left: 5px;" class="mr-2"/><span style="font-size: 32px; font-weight: bolder;" >LiveX</span></div>
+		</div>
+		<div class="col-md-9" style="padding-left: 35px;">	
+			<span style="font-size: 32px; font-weight: bolder" >Documentation</span>				
+		</div>
+	</div>
+    <div class="page-wrapper">
+		
+        <div class="doc-wrapper">
+            <div class="container">
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+						
+						<div class="content-inner">
+                          
+						 
+							
+						   <section id="get-started-section" class="doc-section">
+                              
+							    <h2 class="section-title">Get Started</h2>
+                               
+							    <div class="section-block">
+                                  
+   								    <p>Thank you for purchasing our app</p>
+
+									<p>Please read the documentation carefully , and if you have any question check us .<br> 
+									    
+									    <h4 id="phainc-theme-addons">Must Read this:</h4>
+									    After purchase if you run the project and test the build in phone it will not work becuase you have to setup the <a class="scrollto" href="#API-Configuration">Web API</a> first then app will be works fine.
+									    <br><br>
+									    <a class="scrollto" href="#API-Configuration">Web API</a> is in  Node.js 
+									</p>
+									
+								</div>
+                            </section>
+
+														<section id="get-started-section" class="doc-section">
+                              
+															<h2 class="section-title text-danger">Key Package Required</h2>
+																					 
+															<div class="section-block">
+																	<p>The Purchased <a class="scrollto" href="#">Key & Package Name </a>of your app Must be required for Authentication.</p>
+																		<p>Register your package name to CodderLab.<a class="scrollto ml-2 btn btn-sm" style="background: #b83af3; border: none; color: white; outline: none;" href="#contact-us">Contact Us</a></p>						
+																 
+															
+																
+															</p>
+															
+														</div>
+																				</section>
+							
+							
+							<section id="server-requirements" class="doc-section">
+                              
+							    <h2 class="section-title">Server Requirements</h2>
+                               
+							    <div class="section-block">
+                                  
+   								  
+								
+								<ul>
+										<li>VPS / Dedicated server</li>
+										<li>Node</li>
+										<li>NGNIX (preferred)</li>
+										<li>Mongo DB</li>									
+								</ul>
+							  <h2 class="section-title">LiveX Preferred Hosting</h2>
+								<ul class="mt-3">
+									<li>Digital ocean</li>
+									<li>AWS</li>
+																		
+								</ul>
+                                
+							</section>
+							
+							
+							<section id="Android-Configuration" class="doc-section">
+
+								<h2 class="section-title">Guide to Install and Setup Android Studio:</h2>
+                              
+								<div class="section-block">
+                                    
+									<p>In order to start configuring , you need to install Android studio and the 'Java SE Development Kit'. First download the android studio from here <a href="https://developer.android.com/studio/" target="_blank">Android Studio</a> </p>
+
+									
+									<!-- <div class="embed-responsive embed-responsive-16by9"><iframe width="876" height="493" src="https://www.youtube.com/embed/0zx_eFyHRU0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+									
+                                </div> -->
+									<h3>Installation Guide:</h3>
+									<h4>Step 1</h4>
+									<p>firstly, Head over to <a href="https://developer.android.com/studio/#downloads" target="_blank">this link </a>to get the Android Studio executable or zip file.</p>
+									<h4>Step 2</h4>
+									<p>Then click on the download android studio button.</p>
+									<div class="embed-responsive "><img width="876" height="493" src="assets/images/downloadAndroid.png" /></div></div>
+									<p>Click on the “I have read and agree with the above terms and conditions” checkbox followed by the download button.</p>
+									<div><img width="876" height="493" src="assets/images/terms.png" /></div>	
+									<p>Then click on the  Save file button in the appear prompt box and the file will start downloading </p>						
+									<h4>Step 3</h4>
+									<p>After the download has finished, open the file from downloads and run it.
+										It will prompt the following dialogue box
+										</p>
+									
+									<p>Click on Next.</p>
+									<p>In the next prompt, it’ll ask for a path for installation. Choose a path and hit next.</p>
+									<p><b>Note:</b> The installation path should have the required minimum space.</p>
+									<h4>Step 4</h4>
+									<p>We will start the installation, and once it is completed, it will be like the image shown below.</p>
+									<p>then Click on Next </p>
+									<h4>Step 5</h4>
+									<p>Once “Finish” is clicked, it will ask whether the previous settings need to be imported [if the android studio had been installed earlier], or not.</p>
+									<p>It is better to choose the ‘Don’t import Settings option’.</p>
+									<div><img width="400" height="200" src="assets/images/import.png" /></div>	
+									<p>Click the OK button</p>
+									<h4>Step 6</h4>
+									<p>This will start with Android Studio</p>
+									<div><img width="500" height="300" src="assets/images/launch.png" /></div>	
+									<p>android studio launch photo </p>
+									<p>Meanwhile, we will be looking for the available SDK components.</p>
+									<div><img width="500" height="300" src="assets/images/SDK.png" /></div>	
+									<h4>Step 7</h4>
+									<p>Once it has found the SDK components, it will redirect to the Welcome dialogue box</p>
+									<div><img width="876" height="493" src="assets/images/welcomeAndroid.png" /></div>	
+									<p>Click on Next</p>
+									<div><img width="876" height="493" src="assets/images/install type.png" /></div>	
+									<p>Choose Standard and click on Next.</p>
+									<p>	Now choose the theme, whether Light theme another the Dark one.</p>
+								<p>The light one is called the IntelliJ theme, whereas the dark theme is called Darcula.</p>
+										<p>Choose as required..
+									 </p>
+									 <div><img width="876" height="493" src="assets/images/selectUI.png" /></div>	
+									 <p>Click on the Next button</p>
+									 <h4>Step 4</h4>
+									 <p><b>Now it is time to download the SDK components</b></p>
+									 <div><img width="876" height="493" src="assets/images/downloadSDK.png" /></div>
+									 <p>Then click on Finish .</p>
+									 <div><img width="600" height="400" src="assets/images/downloadComponent.png" /></div>		
+									 <p>So that It has started downloading the components</p>
+									 <div><img width="876" height="493" src="assets/images/components.png" /></div>
+									<p>The Android Studio Is successfully configure.
+										Now it’s time to launch and build apps
+										</p>
+										<p>Last, click on the Finish button to launch it.</p>
+										<h4>Step 4</h4>
+										<div><img width="876" height="493" src="assets/images/start.png" /></div>
+										<p>Attention reader! Don’t stop learning now. Get hold of all the important Java and Collections concepts with the <a href="https://practice.geeksforgeeks.org/courses/Java-Collections?vC=1" target="_blank">Fundamentals of Java and Java Collections Course </a> at a student-friendly price and become industry-ready..</p>
+										<p>you are know how to change package name of the app in android studio? <a href="https://codderlab.com/change-package-name-of-app-in-android-studio/" target="_blank"> HERE </a></p>
+															</section>
+							
+							<section id="SDK-Manager" class="doc-section">
+
+								<h2 class="section-title">SDK Manager</h2>
+                                
+								<div class="section-block">
+                                   
+								   <p>The installer , as also shown in the video should automatically download and install all required components . if you want to do manual setup , download at least the following components using the SDK manager </p>
+								   
+								   
+									<ul>
+										<li>SDK tools </li>
+										<li>SDK platform Tools</li>
+										<li>SDK Build Tools</li>
+										<li>Google Play Services</li>
+										<li>Android Support Library</li>
+										<li>Google Repository</li>
+										<li>Google USB Driver</li>
+									</ul>
+
+									<p>You can download these SDK , if not installed already , using the SDK manager <a href="https://developer.android.com/studio/intro/update.html#sdk-manager" target="_blank">SDK Manager</a> After you're done, you can open Android Studio and continue. </p>
+									
+									<p><strong>*Note: After successfully installing the Android Studio please make a sample app project to install necessary files into computer by android studio.</strong></p>
+									
+                                </div>
+                            </section>
+							
+							
+							
+							<section id="Importing-Android-Project" class="doc-section">
+                                <h2 class="section-title">Importing Android Project and Change Package Name</h2>
+								
+								<div class="section-block">
+									
+									<p>To import the app, simply open Android Studio and import/open the template. Make sure to wait for all the processes (the Gradle Build) to complete before continuing to the next step</p>
+									
+									<div><img width="600" height="400" src="assets/images/importProject1.png" /></div>
+									<div><img width="600" height="400" src="assets/images/importProject2.png" /></div>
+									<div><img width="600" height="400" src="assets/images/import3.png" /></div>
+									<div><img width="600" height="400" src="assets/images/import4.png" /></div>
+
+									
+									<br><br>
+									<h4 id="phainc-theme-addons">Addition steps</h4>
+									<p>Addition steps Sometimes, the Gradle Build fails. In some cases additional components are needed, Android Studio will ask you to do download these additional SDK components in the 'messages' tab, simply follow the instructions provided to install and download the additional components. </p>
+									
+								</div>
+                          
+						  </section>
+							
+							<section id="Change-App-Name" class="doc-section">
+
+							 	<h2 class="section-title">Change App Name</h2>
+								
+								<div class="section-block">
+								
+									<p>Below is illustrated how you can change the name of the application. </p>
+
+									<p>Go to app->res->values->strings.xml</p>
+
+									<img src="assets/images/changeAppName.png">
+								
+								</div>
+                          
+							</section>
+							
+
+							<section id="Change-Color-Scheme" class="doc-section">
+								<h2 class="section-title">Change Color Scheme</h2>
+								<div class="section-block">
+								
+									<p>Below is illustrated how you can change the color of the application.</p>
+
+									<p>Go to app->res->values->colors.xml</p>
+
+									<p>You can change your apps colors to create a custom look. The primary color is the color of the Toolbar, some buttons and headers. The primary
+										dark color is used for e.g. the status bar. get more color from here <a href="https://material.io/guidelines/style/color.html" target="_blank">material.io</a></p>		
+
+									<img src="assets/images/changeColor.png">
+									
+				
+								</div>	
+							</section>
+					
+						
+							<section id="Change-Theme-of-Application" class="doc-section">
+
+								<h2 class="section-title"> Change Theme of Application </h2>
+
+								<div class="section-block">
+								
+									<img src="assets/images/theame.png">
+									<p>Above is illustrated how you can change the Theme of the application.</p>
+								</div>	
+							</section>
+
+
+
+
+							<section id="Change-App-icon" class="doc-section">
+								<h2 class="section-title"> Change App icon </h2>
+								<div class="section-block">
+								
+									<p>Now we need to put a png file with your icon named 'ic_launcher.png' in the following folders: </p>
+									
+									<p>Go to project location->Android source code->LiveX->app->src->main-></p>
+
+									<ul>
+										<li>res/drawable-mdpi - with a size of 48px x 48px</li>
+										<li>res/drawable-hdpi - with a size of 72px x 72px</li>
+										<li>res/drawable-xhdpi - with a size of 96px x 96px</li>
+										<li>res/drawable-xxhdpi - with a size of 144px x 144px</li>
+										<li>res/mipmap-xxxhdpi - with a size of 192px  x 192px</li>
+									</ul>
+									
+									<p>this URL will help you resize your images or event create new icon to your app <a href="https://romannurik.github.io/AndroidAssetStudio/icons-launcher.html#foreground.type=clipart&foreground.clipart=android&foreground.space.trim=1&foreground.space.pad=0.25&foreColor=rgba(96%2C%20125%2C%20139%2C%200)&backColor=rgb(68%2C%20138%2C%20255)&crop=0&backgroundShape=square&effects=none&name=ic_launcher" target="_blank">Launcher Icon Generator</a> </p>
+									<div><img width="876" height="493" src="assets/images/1.png" /></div>	
+									<div><img width="876" height="493" src="assets/images/2.png" /></div>	
+
+								</div>	
+						
+							</section>
+
+							<section id="ChangeSplashscreen " class="doc-section">
+								<h2 class="section-title"> Change Splash Screen  </h2>
+								<div class="section-block">
+								
+									<p>We need to put a png file with named 'splash.png' in the following folder: </p>
+									
+									<p>Go to project location->Android source code->LiveX->app->src->main->res->drawable</p>
+									<div><img width="876" height="493" src="assets/images/Untitled1.png" /></div>	
+									<div><img width="876" height="493" src="assets/images/Untitled2.png" /></div>	
+								</div>	
+						
+							</section>
+						
+						
+							<section id="Change-API-Links" class="doc-section">
+								<h2 class="section-title"> Change API Links </h2>
+
+								<div class="section-block">
+
+									<p>BASE_URL should be <a href="#" target="_blank">"http://domain.com/mobileapp_api/"</a> 
+									</p>
+
+									<p>API_BASE_URL should be <a href="#" target="_blank">"http://domain.com/mobileapp_api/api/"/</a> 
+									</p>
+
+									<p>Click on app->java->com.packagename.appname->ApiClasses->ApiLinks
+									</p>	
+									<img src="assets/images/apilink.png">
+
+									<p>Above is illustrated how you can change the Rest Api link of the application. </p>
+								</div>	
+							</section>
+
+							<section id="Change-API-Links" class="doc-section">
+								<h2 class="section-title">Change Package Name </h2>
+
+								<div class="section-block">
+
+									<img src="assets/images/package1.png">
+									<img src="assets/images/package2.png">
+									<img src="assets/images/package3.png">
+
+								
+								</div>	
+							</section>
+						
+							<!-- <section id="Change-AdMob" class="doc-section">
+								<h2 class="section-title"> Setup Ad Mob </h2>
+								<div class="section-block">
+									<p>
+										For Ad Mob setup you need ad mob id's which you get from your ad mob account. If you have no ad mob account then go to this 
+										<br><strong> URL: https://admob.google.com/home/</strong> make an account, get id's and paste in app as metioned below.
+									</p>
+									<p>Click on app->res->values->strings.xml</p>
+									<img src="assets/img/Change_ad_id.png">
+									
+								</div>	
+							
+							</section>
+
+							<section id="Remove-AdMob" class="doc-section">
+								<h2 class="section-title"> Remove Ad Mob Ads </h2>
+								<div class="section-block">
+									<p>If you want to remove ads just set the value "true" in this code, follow this screenshot</p>
+									
+									<p>public static final boolean is_remove_ads=false =>  is_remove_ads=true;</p>
+									
+									<img src="assets/img/removeAds.png">
+
+								</div>	
+							
+							</section> -->
+						
+						
+							<section id="In-app-Purchases" class="doc-section" style="display:none;">
+								<h2 class="section-title"> In-app Purchases </h2>
+								<div class="section-block">
+									
+									<img src="assets/img/Change_product_id.png">
+									
+									<div class="embed-responsive embed-responsive-16by9"><iframe src="https://www.youtube.com/embed/fXT2ZQMo4Uk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" width="1280" height="720" frameborder="0"></iframe></div>
+									
+									<br>
+									<p>Above is illustrated how you can change the name of the application and change the AdMod ID. </p>
+									
+									<p>
+										Go to com.dinosoftlabs.LiveX.Users.Users_F file and search "case R.id.refresh_btn" here you can see the code which will be changed if you don't want to show the Subscription options. 
+									</p>
+									
+									<xmp>case R.id.refresh_btn: if(MainMenuActivity.purduct_purchase){ card_viewstack.reverse(); } 
+									else open_subscription_view(); break;</xmp>
+									
+								</div>	
+							
+							</section>
+						
+						
+							<section id="Firebase-Configuring" class="doc-section">
+								<h2 class="section-title"> Firebase Configuring </h2>
+								<div class="section-block">
+									
+									<div><img width="876" height="493" src="assets/images/firebase1.png" /></div>	
+									<div><img width="876" height="493" src="assets/images/firebase2.png" /></div>	
+									<div><img width="876" height="493" src="assets/images/firebase3.png" /></div>	
+									<div><img width="876" height="493" src="assets/images/firebase4.png" /></div>	
+									<div><img width="876" height="493" src="assets/images/firebase5.png" /></div>	
+									<div><img width="876" height="493" src="assets/images/firebasesetupJson.png" /></div>	
+									
+								</div>	
+							
+							</section>
+
+							<section id="Change-Firebase-Database" class="doc-section">
+								<h2 class="section-title">Enter SHA Key</h2>
+								<div class="section-block">
+									
+									<p>if you did not change the firebase rules some of the app functions will not work like chat or save/change pictures.</p>
+									
+								
+									<p>
+										if you not provide the SH1 key into the firebase project phone login and google 
+										login will not work you have to add you SH1 keys for both debug and live mode.
+									</p>
+
+									<img src="assets/images/changesha1.png	">
+									<img src="assets/images/changesha2.png">
+
+								</div>	
+							
+							</section>
+						
+						
+						
+							<section id="Push-Notification-Cloud-Function" class="doc-section" style="display:show;">
+								<h2 class="section-title"> Push Notification Cloud Function </h2>
+								<div class="section-block">
+									<h4>Step 1</h4>
+									<p>Go to the Cloud messaging and click on send your First Message</p>
+									<img src="assets/images/cloudmessging.png" />
+									<h4>Step 2</h4>
+									<p>Go to the Project Overview and then click on Add app (refer below image)</p>
+									<img src="assets/images/add app.png" />
+									<p>Then Click on web icon</p>
+									<img src="assets/images/icon.png" />
+									<h4>Step 3</h4>
+									<p>Enter web app name and click on register button</p>
+									<img src="assets/images/webapp.png" />
+									<p>Add firebase Sdk and copy that script and paste into notepad (this is use in node js Project [backend])</p>
+									<img src="assets/images/continue to console.png" />
+									<h4>Step 4</h4>
+									<p>Generate API Key (this is use in node js Project [backend])	</p>
+									<img src="assets/images/credential.png" />
+								</div>	
+							
+							</section>
+							<section id="Setup-AppPurchase" class="doc-section">
+								<h2 class="section-title">SetUp in App Purchase</h2>
+								<div class="section-block">
+									<h4>Step 1</h4>
+									<p>Enter Your Google play license key into Android code </p>
+									<p>Please refer below image</p>
+								
+									<img src="assets/images/playlickey.png">
+									<h4>Step 2</h4>
+									<p>First Generate Product in Google play console & give Product id (same as below image)</p>
+									<p>for set key go to the Admin panel and go to the plan page and click on new button </p>
+									<img src="assets/images/adminplaykey.png">
+								</div>	
+							
+							</section>
+							<section id="Setup-Agora" class="doc-section">
+								<h2 class="section-title">Set Up Agora</h2>
+								<div class="section-block">
+									<h4>Step 1</h4>
+									<p>Open Agora console using <a href="https://sso.agora.io/en/v2/signup" target="_blank">this link </a> </p>
+									
+								
+									<p>
+										Generate Agora App ID
+									</p>
+
+									<img src="assets/images/agoragenerate.png">
+									<h4>Step 2</h4>
+									<p>Copy this Id and paste into Android code.</p>
+									<p>Please refer below image</p>
+									<img src="assets/images/agoraid.png" />
+									<h4>Step 3</h4>
+									<p>For use Live-streaming function you must be generate secret key in Agora console</p>
+									<img src="assets/images/agora2.png" />
+
+								</div>	
+							
+							</section>
+						
+							<section id="Debug-and-release-Key" class="doc-section">
+								<h2 class="section-title"> Debug and release Key </h2>
+								<div class="section-block">
+									
+									
+									
+									<p>Before going to next you have to learn about the Sh1 key for both debug and release. if you are in the development mode then you will use the debug sh1 key but when you going to publish the app on playstore then you will have to use the sh1 key of Release key</p>
+									
+									
+									<h4 id="#">Debug Key</h4>
+									
+									<img src="assets/images/findshakey.png">
+									
+									
+									<h4 id="#">Method 1 How to get the SH1 key for the published app (Signed or release key)</h4>
+								
+									<p> Follow the steps</p>
+									
+									<img src="assets/img/sh1_key_1.png">
+									<img src="assets/img/sh1_key_2.png">
+									<img src="assets/img/sh1_key_3.png">
+									<img src="assets/img/sh1_key_4.png">
+									<img src="assets/img/sh1_key_5.png">
+									
+									
+									<h4 id="#">Method 2 How to get the SH1 key for the published app (Signed or release key)</h4>
+									
+									<p> To get realese sh1 contains two step. </p>
+									<p>Step1: you will generate your own app signing key <a href="https://developer.android.com/studio/publish/app-signing" target="_blank">Create signing key</a></p>
+									<p>Step2: Get the Sh1 key of app signing key</p>
+									
+									<p id="#">Get the Sh1 key. Run the below command on Command Promt</p>
+									
+									<xmap>
+									keytool.exe -list -v -alias {alies name you set according to above toturial "key0" is the alies name} -keystore "{file adress of the key}" -storepass {password} -keypass {password}
+									</xmap>
+									
+									
+								</div>	
+							
+							</section>
+
+						
+							<section id="Google-Login-Configuration" class="doc-section">
+								<h2 class="section-title"> Google Login Configuration </h2>
+								<div class="section-block">
+									
+									<p>Here is the Helping video for setup google login </p>
+
+								
+								
+									<h4> Step 1 </h4>
+									<img src="assets/img/google/Screenshot_13.png" >
+									<img src="assets/img/google/G0.png">
+								
+								</div>
+							</section>
+							<section id="Generate-Debug-Apk" class="doc-section">
+								<h2 class="section-title"> Generate Debug Apk </h2>
+								
+								<div class="section-block">
+									<P>Here is the Helping video for generating debug APK</P>
+
+									
+									
+									<h4>Step 1</h4>
+									<img src="assets/images/generetedebugapk.jpg">
+
+								</div>	
+							
+							</section>
+						
+					    
+                        
+
+							<section id="API-Configuration" class="doc-section">
+								<h2 class="section-title">Database Set Up </h2>
+								<div class="section-block">
+									<h4>Step 1</h4>
+									<p>Create a mongodb Atlas</p>
+									<p>use this link <a href="https://account.mongodb.com/account/register" target="_blank">https://account.mongodb.com/account/register	</a></p>
+									<img src="assets/images/createdb.png"/>
+									<ul>
+										<li>Click <b>Sign up with Google.</b></li>
+										<li>Enter one of the following identifiers for your Google account:
+											<ul><li>your gmail or Google Apps email address</li>
+												<li>	the phone number associated with your Google account</li></ul>												
+											</li>
+											<li>Click <b>Next</b></li>
+											<li>Enter the password for your Google account.</li>
+											<li>then Click on<b>Next</b></li>
+											<li>Review and select the checkbox to accept the <b>Terms of Service</b> and the <b>Privacy Policy.</b></li>
+											<li>then Click on<b>Submit</b></li>
+										</ul>
+									<h4>Step 2</h4>
+									<p>Deploy a free tier cluster </p>
+									<ul><li>Create new cluster (starting at free)</li></ul>
+									<img src="assets/images/createcluster.png" />
+									<ul><li>Click on Create cluster</li></ul>
+									<img src="assets/images/cluster.png" />
+									<h4>Step 3</h4>
+									<ul><li>After creating Cluster Click on Connect button </li></ul>
+									<img src="assets/images/connectCluster.png" />
+									<ul><li>Click on Add your current IP Address </li></ul>
+									<img src="assets/images/current ip.png" />
+									<p>And then Click on Add IP Address</p>
+									<ul><li>Create Database User </li></ul>
+									<p>Enter your Username and password then click on create database user.</p>
+									<ul><li>Click on <b> Choose a connection method Button.</b></li>
+									<li>Connect using MongoDB  compass</li>
+									<img src="assets/images/connecttomonogb.png" />
+									<ul><li>Then Click on <b>I do not have MongoDB Compass</b> and then click on<b> Download Compass</b> and copy Connection String and paste it into notepad.</li></ul>
+									<img src="assets/images/mongodbCompass.png" />
+									<ul><li>Then Open above installed MongoDB Compass and paste Copied Connection String and click on connect button.<br>Ex: mongodb+srv://root:root123@cluster0.jsncd.mongodb.net/test</li></ul>
+									<img src="assets/images/connectionString.png" />
+									</ul>
+									<ul><li>Database Created Successfully.</li></ul>
+							</section>
+
+
+							<section id="Admin-Panel-Configuration" class="doc-section">
+								<h2 class="section-title"> Admin Panel Configuration </h2>
+								<div class="section-block">
+
+								<h4>Setup your React.js Project(frontend) </h4>
+								<h5>Step 1</h5>
+								<p>For install packages (execute in Terminal) ..<b>npm install</b></p>
+								<img src="assets/images/react-npm.png" />
+								<h5>Step 2</h5>
+								<p>Change the serverPath in <b>src/util/serverpath.js</b></p>
+								<img src="assets/images/setserverpath.png" />
+								<h5>Step 3</h5>
+								<p>Then run the command in terminal  :- <b> npm start</b></p>
+
+								<h5>Step 4</h5>
+								<p>Sign in the Admin Panel and also Enter Key and package</p>
+								<img src="assets/images/keyPackage.png" />
+
+								<h4>Setup your node js Project (backend):</h4>
+								<h5>Step 1</h5>
+								<p>For install packages (execute in Terminal) ..<b>npm install</b></p>
+								<img src="assets/images/node-npm.png" />
+
+								<h5>Step 2</h5>
+								<h5>Change the serverPath in <b> util/serverpath.js</b></h5>
+								<img src="assets/images/serverpath.png" />
+								<p>Put the MongoDB Copied Connection String in <b> index.js </b> file</p>
+								<img src="assets/images/index.png" />
+
+								<h5>Step 3</h5>
+								<p>Put the Code of json file (above Copied script when add firebase SDK or web APP ) in the firebaseconfig.js (refer below image)</p>
+								<img src="assets/images/config.png" />
+
+								<h5>Step 4</h5>
+								<p>Put above downloaded file ( firebase generate API key) in the your project and save or rename the file credential.json (refer below image)</p>
+								<img src="assets/images/credentialfile.png" />
+
+								<h5>Step 5</h5>
+								<p>Then run the command in terminal  :-  <b>npm start</b></p>
+								</div>	
+							
+							</section>
+						
+							
+							<section id="faq" class="doc-section">
+								<h2 class="section-title"> FAQ </h2>
+								
+								<div class="section-block">
+									<!-- <h4 id="#">App Develope in native or not?</h4>
+									<p>Yes app is in native coding</p> -->
+									
+									<h4 id="#">Which Node version?</h4>
+									<p>it will work on v12.18.3 </p>
+									
+									<h4 id="#">Which Database You are using?</h4>
+									<p>We are using MongoDB database</p>
+									
+									
+									<h4 id="#">Does it have Admin panel </h4>
+									<p>Yes It has admin panel as well which is in HTML/CSS and connected with database via Node js API</p>
+									
+									<h4 id="#">Does it have Documentation  </h4>
+									<p>Yes it has Documentation about android , web api setup , admin panel setup , firebase push notification setup</p>
+									
+								</div>	
+							
+							</section>
+							
+                        </div>
+                    </div>
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+											
+                        <div id="doc-nav" class="doc-nav">
+	                        
+	                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+	                                <a class="nav-link scrollto" href="#get-started-section">Get Started</a>
+	                                <a class="nav-link scrollto" href="#server-requirements">Server Requirements</a>
+	                                <a class="nav-link scrollto" href="#Android-Configuration">Install Android studio</a>
+									<a class="nav-link scrollto" href="#SDK-Manager">SDK Manager</a>
+										<nav class="doc-sub-menu nav flex-column">
+										   <a class="nav-link scrollto" href="#Importing-Android-Project">Importing Android Project</a>
+										</nav>
+										<a class="nav-link scrollto" href="#Change-App-Name">App Basic Setting</a>
+									<!-- <a class="nav-link scrollto" href="#Change-Bundle-ID">App Basic Setting</a> -->
+										<nav class="doc-sub-menu nav flex-column">
+										   <!--<a class="nav-link scrollto" href="#Change-Bundle-ID">Change Bundle ID</a>-->
+										   <!--<a class="nav-link scrollto" href="#Change-App-Name">Change App Name</a>-->
+										   <!--<a class="nav-link scrollto" href="#Change-Color-Scheme">Change Color Scheme</a>-->
+										   <!--<a class="nav-link scrollto" href="#Change-Theme-of-Application">Change Theme of Application</a>-->
+										   <!--<a class="nav-link scrollto" href="#Change-App-icon">Change App Icon</a>-->
+										   <!--<a class="nav-link scrollto" href="#Change-API-Links">Change API Links</a>-->
+										   <!-- <a class="nav-link scrollto" href="#Change-AdMob">Setup Ad Mob</a> -->
+										   <a class="nav-link scrollto" href="#In-app-Purchases" style="display:none;">In-app Purchases</a>
+										</nav>	
+									<a class="nav-link scrollto" href="#Firebase-Configuring">Firebase Configuring</a>
+									<a class="nav-link scrollto" href="#Setup-AppPurchase">Setup in App Purchase</a>
+									<a class="nav-link scrollto" href="#Setup-Agora">Setup Agora</a>
+									
+									<a class="nav-link scrollto" href="#Push-Notification-Cloud-Function" style="display:none;">Push Notification Cloud Function</a>
+									
+									<a class="nav-link scrollto" href="#Debug-and-release-Key">Debug and release Key</a>
+									
+									<a class="nav-link scrollto" href="#Google-Login-Configuration">Google Login Configuration</a>		
+									<a class="nav-link scrollto" href="#Generate-Debug-Apk">Generate Debug Apk</a>
+
+									<a class="nav-link scrollto" href="#API-Configuration">Database SetUp</a>
+									<a class="nav-link scrollto" href="#Admin-Panel-Configuration">Admin Panel Configuration</a>
+
+									<a class="nav-link scrollto" href="#faq">FAQ</a>
+									
+	                            </nav>
+	                        
+                        </div>
+                    </div>
+                </div>             
+            </div>
+        </div>
+        
+       
+        
+    </div>
+    
+     
+     
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>      
+    <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>                                                             
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <style>
+        /*Cookie Consent Begin*/
+            #cookieConsent {
+                background-color:#C52127;
+                min-height: 26px;
+                font-size: 14px;
+                color: #ffffff;
+                line-height: 26px;
+                padding: 10px 0 10px 30px;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 9999;
+            }
+            #cookieConsent a {
+                color: #4B8EE7;
+                text-decoration: none;
+            }
+            #closeCookieConsent {
+                float: right;
+                display: inline-block;
+                cursor: pointer;
+                height: 20px;
+                width: 20px;
+                margin: -15px 0 0 0;
+                font-weight: bold;
+            }
+            #closeCookieConsent:hover {
+                color: #FFF;
+            }
+            #cookieConsent a.cookieConsentOK {
+                background-color: #F1D600;
+                color: #000;
+                display: inline-block;
+                border-radius: 5px;
+                padding: 5px 40px;
+                cursor: pointer;
+                float: right;
+                margin: 0 60px 0 10px;
+                font-weight: 600;
+            }
+            #cookieConsent a.cookieConsentOK:hover {
+                background-color: #E0C91F;
+            }
+            /*Cookie Consent End*/
+
+    </style>
+      
+    <!-- <div id="cookieConsent">
+       <div id="closeCookieConsent">x</div>
+        <span style="position: absolute;margin-top: 5px;font-weight: 600;">
+            Are you facing any issues setting up the app? Our expected response time is 24 to 96 hours Mon-Fri (9AM - 6PM) GMT+5,
+        </span> 
+        <a href="https://bit.ly/2wUuQES" class="cookieConsentOK" target="_blank">Submit A Ticket</a>
+    </div> -->
+</body>
+
+
+<!-- Mirrored from demo.qboxus.com/livex/doc/index.html?time1234 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 25 Feb 2021 04:45:24 GMT -->
+</html> 
+
